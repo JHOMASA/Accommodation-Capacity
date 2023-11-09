@@ -1,0 +1,56 @@
+#Load table Capacidad_Alojamiento
+data = pd.read_csv(r"C:\Users\legion\OneDrive\Documents\data analytics\Practice\Alemania economy\Capacidad_Alojamiento.csv", encoding = 'iso-8859-1')
+Fabricacion = data 
+# Import libraries 
+import pandas as pd
+# Retrieve the first columns 
+Capacidad_Alojamiento.head()
+# Drop specific column 
+Capacidad_Alojamiento.drop(columns = ["Einheit"], inplace = True)
+# Drop duplicates values
+Capacidad_Alojamiento.drop_duplicates()
+# save the table 
+Capacidad_Alojamiento.to_csv('Capacidad_Alojamiento.csv', index = False)
+print("The document Capacidad_Alojamiento has been saved named Capacidad_Alojamiento")
+
+#Load table Fabricacion
+data = pd.read_csv(r"C:\Users\legion\OneDrive\Documents\data analytics\Practice\Alemania economy\Fabricacion.csv", encoding = 'iso-8859-1')
+Fabricacion = data 
+# Load table Fabricacion
+data = pd.read_csv(r"C:\Users\legion\OneDrive\Documents\data analytics\Practice\Alemania economy\Fabricacion.csv", encoding = 'iso-8859-1')
+Fabricacion = data 
+# Retrieve the first columns
+Fabricacion.head()
+# Drop column Einheit
+Fabricacion.drop(columns = ["Einheit"], inplace = True)
+# Drop duplicates value
+Fabricacion.drop_duplicates()
+#Save the document
+Fabricacion.to_csv('Fabricacion.csv', index = False)
+print("The document has been saved named Fabricacion")
+
+# Load Industria expancion
+data = pd.read_csv(r"C:\Users\legion\OneDrive\Documents\data analytics\Practice\Alemania economy\Industria expancion.csv",encoding = 'iso-8859-1' )
+# Drop the column Einheit
+Industria_expansion.drop(columns = "Einheit", inplace = True)
+# Drop duplicates
+Industria_expansion.drop_duplicates()
+# Replace "," to "."
+Industria_expansion.iloc[2] = Industria_expansion.iloc[2].str.replace(',', '.')
+Industria_expansion.iloc[5] = Industria_expansion.iloc[5].str.replace(',', '.')
+Industria_expansion.iloc[8] = Industria_expansion.iloc[8].str.replace(',', '.')
+Industria_expansion.iloc[11] = Industria_expansion.iloc[11].str.replace(',', '.')
+" Save the document Industria_expansion
+Industria_expansion.to_csv("Industria_expansion.csv", index = True)
+print("The document have been saved in Indutria")
+# Load the document Industria Manufacturera 
+data = pd.read_csv(r"C:\Users\legion\OneDrive\Documents\data analytics\Practice\Alemania economy\Industria manufacturera.csv", encoding = 'iso-8859-1')
+Industria_Manufacturera = data 
+# Drop the column Einheit
+Industria_Manufacturera.drop(columns = ["Einheit"], inplace = True)
+# Drop duplicates 
+Industria_Manufacturera.drop_duplicates()
+# Save the table
+Industria_Manufacturera.to_csv("Industria_Manufacturera.csv", index = False)
+print("The document have been saved named Industria_Manufacturera")
+
